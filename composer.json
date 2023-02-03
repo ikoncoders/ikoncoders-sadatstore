@@ -1,11 +1,11 @@
 {
     "name": "ikoncoders/sadatstore",
-    "description": "git commit -m \"first commit\"",
+    "description": "ikoncoders-sadatsore website",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sadatstore\\": "src/"
+            "Sadatstore\\": "src"
         }
     },
     "authors": [
