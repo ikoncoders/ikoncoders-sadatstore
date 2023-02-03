@@ -1,0 +1,20 @@
+{
+    "name": "ikoncoders/sadatstore",
+    "description": "git commit -m \"first commit\"",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sadatstore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ikoncoders",
+            "email": "ikoncoders@gmail.com",
+            "role": "Developer & Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
