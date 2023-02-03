@@ -37,11 +37,9 @@
 						<span>Fav Category</span> :
 					</li>
 				</ul>
-				<a href="#" class="btn btn-default">Edit Information</a>
+				<a href="edit_profile.php?do=Edit&userid=<?=$info['id']?>" class="btn btn-default">Edit Information</a>
                
-					<a href="newad.php?do=Add" class="btn btn-primary">
-							<i class="fa fa-plus"></i> Post New Ad
-						</a>
+				<a href="newad.php?do=Add" class="btn btn-primary">	<i class="fa fa-plus"></i> Post New Ad	</a>
 				
 			</div>
 		</div>

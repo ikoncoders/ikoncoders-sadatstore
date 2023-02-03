@@ -83,24 +83,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*
 	** Title Function v1.0
 	** Title Function That Echo The Page Title In Case The Page
@@ -130,7 +112,7 @@
 	** $seconds = Seconds Before Redirecting
 	*/
 
-	function redirectHome($theMsg, $url = null, $seconds = 3) {
+	function redirect($theMsg, $url = null, $seconds = 3) {
 
 		if ($url === null) {
 
