@@ -18,10 +18,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <?= $_SESSION['USERNAME']?> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <?= $_SESSION['ADMIN']?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="../index.php">Visit Shop</a></li>
-            <li><a href="members.php?do=Edit&userid=<?php echo $_SESSION['USERNAME'] ?>">Edit Profile</a></li>
+            <li><a href="members.php?do=Edit&userid=<?php echo $_SESSION['ADMIN'] ?>">Edit Profile</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>

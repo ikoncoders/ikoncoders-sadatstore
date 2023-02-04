@@ -1,12 +1,13 @@
 <div class="upper-bar">
 		<div class="container">
+		<li><a href="logout.php">Logout</a></li>
 			<?php 
-				if (isset($_SESSION['USERNAME'])) { ?>
+				if (isset($_SESSION['uid'])) { ?>
 
 				<img class="my-image img-thumbnail img-circle" src="img.png" alt="" />
 				<div class="btn-group my-info">
 					<span class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-						<?php echo $session ?>
+						<?php echo $sessionUser ?>
 						<span class="caret"></span>
 					</span>
 					<ul class="dropdown-menu">

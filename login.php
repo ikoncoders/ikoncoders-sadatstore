@@ -1,6 +1,7 @@
 <?php
 	ob_start();
-
+	$noNavbar ='';
+	
 	$pageTitle = 'Login';
 	if (isset($_SESSION['USERNAME'])) {
 		header('Location: index.php');
@@ -25,6 +26,8 @@
 										users 
 									WHERE 
 										username = ? 
+									AND 
+										regStatus = 1								
 									LIMIT 1");
 
 			$stmt->execute(array($user));
@@ -233,6 +236,7 @@
 </div>
 
 <?php 
-	include $tpl . 'footer.php';
+	include $tpl . 'foot.php';
+	
 	ob_end_flush();
 ?>

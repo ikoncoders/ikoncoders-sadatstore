@@ -12,7 +12,7 @@
 
     include 'init.php';
 
-	if (isset($_SESSION['USERNAME'])) {
+	if (isset($_SESSION['aid'])) {
 		
 
 		$do = isset($_GET['do']) ? $_GET['do'] : 'Manage';

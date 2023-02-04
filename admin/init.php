@@ -2,6 +2,12 @@
     session_start();
 	include 'connect.php';
 
+	$sessionAdmin = '';
+	
+	if (isset($_SESSION['aid'])) {
+		$sessionAdmin = $_SESSION['aid'];
+	}
+	
 	// Routes
 
 	$tpl 	= 'includes/templates/'; // Template Directory

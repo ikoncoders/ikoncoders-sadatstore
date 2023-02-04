@@ -5,7 +5,7 @@
 
     include 'init.php';
 
-	if (isset($_SESSION['USERNAME'])) {
+	if (isset($_SESSION['aid'])) {
 		header('Location: admin_dashboard.php'); // Redirect To Dashboard Page
 	}
 
@@ -42,8 +42,8 @@
 			if ($count) {    
                 // Verify the entered password against the hashed password             
                  if (password_verify($password, $userData['password'])) { 
-                    $_SESSION['USERNAME'] = $username; // Register the username in the session
- 					$_SESSION['uid'] = $userData['id']; // Register the user ID in the session
+                    $_SESSION['ADMIN'] = $username; // Register the username in the session
+ 					$_SESSION['aid'] = $userData['id']; // Register the user ID in the session
                     $succesMsg = 'You have login successfully.'; // login successful
                     header('Location: admin_dashboard.php'); // Redirect to the dashboard page
                     exit();                   

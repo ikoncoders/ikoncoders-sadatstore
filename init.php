@@ -7,10 +7,10 @@ session_start();
 
 	include 'admin/connect.php';
 
-	$session = '';
+	$sessionUser = '';
 	
 	if (isset($_SESSION['USERNAME'])) {
-		$session = $_SESSION['USERNAME'];
+		$sessionUser = $_SESSION['USERNAME'];
 	}
 
 	// Routes
@@ -31,3 +31,5 @@ session_start();
 
 	if (!isset($noNavbar)) { include $tpl . 'navbar.php'; }
 	
+
+	if (!isset($noFoot)) { include $tpl . 'foot.php'; }

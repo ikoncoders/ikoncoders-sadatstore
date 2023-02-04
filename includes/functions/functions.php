@@ -176,7 +176,7 @@
 	** $limit = Number Of Records To Get
 	*/
 
-	function getLatest($select, $table, $order, $limit = 5) {
+	function latest($select, $table, $order, $limit = 5) {
 
 		global $con;
 
